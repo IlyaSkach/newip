@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Expertise - Профессиональные услуги</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+	<div class="background-overlay"></div>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__content">
+				<div class="logo">
+					<a href="#">
+						<img src="Images/logo.png" alt="Expertise Logo">
+					</a>
+				</div>
+				<nav class="main-nav">
+					<ul class="menu">
+						<li><a href="#services">Услуги</a></li>
+						<li><a href="#advantages">Преимущества</a></li>
+						<li><a href="#documents">Документы</a></li>
+						<li><a href="#contact">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="contact-info">
+					<a href="tel:+7777777777" class="phone">
+						<i class="fas fa-phone"></i>
+						+7(777)777-77-77
+					</a>
+					<a href="mailto:ippchelkina@mail.ru" class="email">
+						<i class="fas fa-envelope"></i>
+						ipnew@mail.ru
+					</a>
+				</div>
+				<button class="mobile-menu-button">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<nav class="main-nav-mobile">
+					<ul class="menu">
+						<li><a href="#services">Услуги</a></li>
+						<li><a href="#advantages">Преимущества</a></li>
+						<li><a href="#documents">Документы</a></li>
+						<li><a href="#contact">Контакты</a></li>
+					</ul>
+					<div class="contact-info-mobile">
+						<a href="tel:+79261058999" class="phone">
+							<i class="fas fa-phone"></i>
+							+7(926)351-13-34
+						</a>
+						<a href="mailto:ippchelkina@mail.ru" class="email">
+							<i class="fas fa-envelope"></i>
+							ippchelkina@mail.ru
+						</a>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section id="hero" class="section hero-section">
+			<video class="hero-video" autoplay muted loop playsinline>
+				<source src="Images/video.mp4" type="video/mp4">
+			</video>
+			<div class="container">
+				<div class="hero-content">
+					<h1>Профессиональные консалтинговые услуги</h1>
+					<p class="hero-description">
+						Полный спектр консалтинговых услуг для органов по сертификации и испытательных лабораторий
+					</p>
+					<a href="#services" class="cta-button">Узнать больше</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="services" class="section services-detailed">
+			<div class="container">
+				<h2>Наши услуги</h2>
+				<p class="section-description">
+					Профессиональные консалтинговые услуги для органов по сертификации и испытательных лабораторий
+				</p>
+				<div class="services-grid">
+					<div class="service-circle" data-service="preparation">
+						<div class="service-icon">
+							<i class="fas fa-file-alt"></i>
+						</div>
+						<h3>Подготовка документов к аккредитации</h3>
+					</div>
+
+					<div class="service-circle" data-service="development">
+						<div class="service-icon">
+							<i class="fas fa-book"></i>
+						</div>
+						<h3>Разработка документов СМК</h3>
+					</div>
+
+					<div class="service-circle" data-service="implementation">
+						<div class="service-icon">
+							<i class="fas fa-cogs"></i>
+						</div>
+						<h3>Внедрение системы менеджмента</h3>
+					</div>
+
+					<div class="service-circle" data-service="accreditation">
+						<div class="service-icon">
+							<i class="fas fa-tasks"></i>
+						</div>
+						<h3>Подготовка области аккредитации</h3>
+					</div>
+
+					<div class="service-circle" data-service="training">
+						<div class="service-icon">
+							<i class="fas fa-user-graduate"></i>
+						</div>
+						<h3>Обучение сотрудников</h3>
+					</div>
+
+					<div class="service-circle" data-service="staff-preparation">
+						<div class="service-icon">
+							<i class="fas fa-chalkboard-teacher"></i>
+						</div>
+						<h3>Подготовка к аккредитации</h3>
+					</div>
+
+					<div class="service-circle" data-service="analysis">
+						<div class="service-icon">
+							<i class="fas fa-chart-line"></i>
+						</div>
+						<h3>Анализ опыта работы</h3>
+					</div>
+
+					<div class="service-circle" data-service="verification">
+						<div class="service-icon">
+							<i class="fas fa-clipboard-check"></i>
+						</div>
+						<h3>Проверка деятельности</h3>
+					</div>
+
+					<div class="service-circle" data-service="audit">
+						<div class="service-icon">
+							<i class="fas fa-search-plus"></i>
+						</div>
+						<h3>Проведение аудита</h3>
+					</div>
+
+					<div class="service-circle" data-service="certification">
+						<div class="service-icon">
+							<i class="fas fa-users"></i>
+						</div>
+						<h3>Услуги по сертификации</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Модальное окно для описания услуг -->
+		<div id="service-modal" class="service-modal">
+			<div class="service-modal-content">
+				<button class="close-modal">&times;</button>
+				<div class="service-modal-body">
+					<div class="service-modal-icon"></div>
+					<h3 class="service-modal-title"></h3>
+					<p class="service-modal-description"></p>
+				</div>
+			</div>
+		</div>
+
+		<section id="advantages" class="section advantages-section">
+			<div class="container">
+				<h2>Почему выбирают нас</h2>
+				<div class="advantages-grid">
+					<div class="advantage-card">
+						<div class="advantage-icon">
+							<i class="fas fa-wallet"></i>
+						</div>
+						<h3>Индивидуальные условия</h3>
+						<p>Выгодные условия оплаты без переплат</p>
+					</div>
+
+					<div class="advantage-card">
+						<div class="advantage-icon">
+							<i class="fas fa-file-contract"></i>
+						</div>
+						<h3>Работа по договору</h3>
+						<p>Юридическое и экономическое сопровождение</p>
+					</div>
+
+					<div class="advantage-card">
+						<div class="advantage-icon">
+							<i class="fas fa-award"></i>
+						</div>
+						<h3>Высокая квалификация</h3>
+						<p>Уникальный экспертный опыт</p>
+					</div>
+
+					<div class="advantage-card">
+						<div class="advantage-icon">
+							<i class="fas fa-clock"></i>
+						</div>
+						<h3>Оперативность</h3>
+						<p>Оптимальные сроки оказания услуг</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="documents" class="section documents-section">
+			<div class="container">
+				<h2>Документы</h2>
+				<div class="documents-container"></div>
+			</div>
+		</section>
+
+		<section id="contact" class="section cta-section">
+			<div class="container">
+				<div class="cta-content">
+					<h2>Готовы начать сотрудничество?</h2>
+					<p>Свяжитесь с нами для получения подробной информации о наших услугах</p>
+					<div class="cta-buttons">
+						<a href="tel:+79261058999" class="cta-button">
+							<i class="fas fa-phone"></i>
+							Позвонить
+						</a>
+						<a href="mailto:ippchelkina@mail.ru" class="cta-button secondary">
+							<i class="fas fa-envelope"></i>
+							Написать
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<p>&copy; 2025 ИП Новое. Все права защищены.</p>
+			<p><a href="#" onclick="showPrivacyPolicyModal()">Политика конфиденциальности</a></p>
+		</div>
+	</footer>
+
+	<!-- Модальное окно политики конфиденциальности -->
+	<div id="privacy-policy-modal" class="privacy-policy-modal">
+		<div class="privacy-policy-modal-content">
+			<button class="close-button">&times;</button>
+			<h2>Политика конфиденциальности</h2>
+			<div class="privacy-policy-text">
+				<p>Настоящая Политика конфиденциальности определяет порядок обработки и защиты персональных данных ИП Новое
+					(далее – Оператор).</p>
+
+				<h3>1. Общие положения</h3>
+				<p>1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение прав и
+					свобод человека и гражданина при обработке его персональных данных.</p>
+				<p>1.2. Настоящая политика Оператора в отношении обработки персональных данных применяется ко всей информации,
+					которую Оператор может получить о посетителях веб-сайта.</p>
+
+				<h3>2. Основные понятия</h3>
+				<p>2.1. Автоматизированная обработка персональных данных – обработка персональных данных с помощью средств
+					вычислительной техники.</p>
+				<p>2.2. Блокирование персональных данных – временное прекращение обработки персональных данных.</p>
+
+				<h3>3. Обработка персональных данных</h3>
+				<p>3.1. Оператор обрабатывает персональные данные на законной и справедливой основе для выполнения возложенных
+					на Оператора функций, полномочий и обязанностей.</p>
+				<p>3.2. Оператор получает персональные данные непосредственно у субъектов персональных данных.</p>
+
+				<h3>4. Цели обработки персональных данных</h3>
+				<p>4.1. Цель обработки персональных данных Пользователя:</p>
+				<ul>
+					<li>информирование Пользователя посредством отправки электронных писем;</li>
+					<li>заключение, исполнение и прекращение гражданско-правовых договоров;</li>
+					<li>предоставление доступа Пользователю к сервисам, информации и/или материалам.</li>
+				</ul>
+
+				<h3>5. Правовые основания обработки персональных данных</h3>
+				<p>5.1. Оператор обрабатывает персональные данные Пользователя только в случае их заполнения и/или отправки
+					Пользователем самостоятельно через специальные формы.</p>
+
+				<h3>6. Порядок и условия обработки персональных данных</h3>
+				<p>6.1. Обработка персональных данных осуществляется с согласия субъекта персональных данных на обработку его
+					персональных данных.</p>
+				<p>6.2. Оператор обеспечивает сохранность персональных данных и принимает все возможные меры, исключающие доступ
+					к персональным данным неуполномоченных лиц.</p>
+
+				<h3>7. Заключительные положения</h3>
+				<p>7.1. Пользователь может получить любые разъяснения по интересующим вопросам, касающимся обработки его
+					персональных данных.</p>
+				<p>7.2. В данном документе будут отражены любые изменения политики обработки персональных данных Оператором.</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
