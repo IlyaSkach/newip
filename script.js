@@ -326,6 +326,74 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   createDocumentElements();
+
+  // Функции для работы с согласием на обработку персональных данных
+  window.showConsentModal = function () {
+    const modal = document.getElementById("consent-modal");
+    if (modal) {
+      modal.style.display = "block";
+      document.body.style.overflow = "hidden";
+    }
+  };
+
+  function closeConsentModal() {
+    const modal = document.getElementById("consent-modal");
+    if (modal) {
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  }
+
+  // Обработчик для ссылки согласия
+  const consentLink = document.getElementById("consent-link");
+  if (consentLink) {
+    consentLink.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.showConsentModal();
+    });
+  }
+
+  // Обработчик изменения состояния чекбокса
+  const checkbox = document.getElementById("consent-checkbox");
+  const emailButton = document.getElementById("email-button");
+
+  if (checkbox && emailButton) {
+    checkbox.addEventListener("change", function () {
+      if (this.checked) {
+        emailButton.classList.remove("disabled");
+      } else {
+        emailButton.classList.add("disabled");
+      }
+    });
+
+    // Закрытие модального окна при клике вне его содержимого
+    window.addEventListener("click", function (event) {
+      const modal = document.getElementById("consent-modal");
+      if (event.target === modal) {
+        closeConsentModal();
+      }
+    });
+
+    // Закрытие модального окна при нажатии Escape
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        const modal = document.getElementById("consent-modal");
+        if (modal && modal.style.display === "block") {
+          closeConsentModal();
+        }
+      }
+    });
+  }
+
+  // Обработчик для крестика закрытия модального окна согласия
+  const consentCloseBtn = document.querySelector(
+    "#consent-modal .close-button"
+  );
+  if (consentCloseBtn) {
+    consentCloseBtn.addEventListener("click", function () {
+      closeConsentModal();
+    });
+  }
 });
 
 window.addEventListener("resize", function () {
